@@ -1,0 +1,16 @@
+.custombutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  gap: 8px;
+  width: 221px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: #5BC8AF;
+  cursor: pointer;
+  align-self: center;
+  font-weight: 700;
+  font-size: 18px;
+
+}

@@ -1,0 +1,271 @@
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --text-color: #222;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  background-color: #15766b;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.contact-form-container {
+    background: linear-gradient(to bottom, #2A7D6C, #3E69609E);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input-wrapper {
+  flex: 1;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper select {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus {
+  border-color: #4caf50;
+}
+
+.input-wrapper select option {
+  background-color: #15766b;
+  color: white;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.contact-section {
+    background-color: #194D44;
+}
+
+.hero {
+  
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+    background-color: #194D44;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 371px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.understanding-section{
+    
+}
+.we-understand {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.understanding-content {
+  display: flex;
+  gap: 36px;
+}
+
+.understanding-item {
+  width: 371px;
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #333333;
+  text-align: left;
+}
+
+
+
+.understanding-content div {
+  width: 30%;
+}
+
+.testimonial {
+  height: 269px;
+  display: flex;
+  gap: 36px;
+}
+.testimonial-content {
+  background-color: #194d44;
+}
+.testimonial-text {
+  color: #ffffff;
+  text-align: left;
+  margin-left: 36px;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 62px;
+}
+
+.testimonial img {
+  width: 269px;
+  height: 269px;
+}
+
+.testimonial-heading {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.organize-section {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.organize-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.organize-item {
+  background-color: white;
+  padding: 2rem;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-section {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  background-color: #ddd;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+footer {
+  background-color: #eaeaea;
+  color: #757575;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: Montserrat;
+}
