@@ -30,7 +30,7 @@ nav {
 }
 
 .contact-form-container {
-    background: linear-gradient(to bottom, #2A7D6C, #3E69609E);
+  background: linear-gradient(to bottom, #2a7d6c, #3e69609e);
   border-radius: 12px;
   padding: 30px;
   width: 100%;
@@ -112,11 +112,10 @@ h2 {
 }
 
 .contact-section {
-    background-color: #194D44;
+  background-color: #194d44;
 }
 
 .hero {
-  
   color: white;
   display: flex;
   justify-content: space-between;
@@ -126,7 +125,7 @@ h2 {
 }
 
 .hero-content h1 {
-    background-color: #194D44;
+  background-color: #194d44;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -160,8 +159,7 @@ h2 {
   border-radius: 8px;
 }
 
-.understanding-section{
-    
+.understanding-section {
 }
 .we-understand {
   text-align: center;
@@ -184,8 +182,6 @@ h2 {
   color: #333333;
   text-align: left;
 }
-
-
 
 .understanding-content div {
   width: 30%;
@@ -245,19 +241,45 @@ h2 {
 
 .video-section {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
   padding: 2rem;
   max-width: 1440px;
+  height: 648px;
   margin: 0 auto;
 }
 
+.watch-the-video {
+  background: linear-gradient(to bottom, #305d52, #153f38);
+  width: 110%;
+  height: 100%;
+  z-index: 2;
+  clip-path: path("M0 0H719.719C635.252 274 831.175 323.5 719.719 648H0V0Z");
+  color: white;
+}
+
 .video-placeholder {
-  background-color: #ddd;
-  height: 400px;
+  background-color: transparent;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin: 0 auto;
-  width: 80%;
+  width: 95%;
+  z-index: 0;
+}
+
+.video-placeholder video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.video-placeholder video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the full container */
 }
 
 footer {
@@ -268,4 +290,54 @@ footer {
   font-weight: 400;
   font-size: 14px;
   font-style: Montserrat;
+}
+.watch-the-video-outer-container{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.watch-video-text-container {
+  display: flex;
+  place-items: start;
+  align-items: start;
+  gap: 1rem;
+  width: 472px;
+}
+
+.watch-video-text-icon {
+  color: #10b981; /* Green */
+  font-size: 1.25rem; /* text-xl equivalent */
+}
+
+.watch-video-text-content {
+  font-size: 0.875rem; /* text-sm equivalent */
+  
+}
+
+.watch-video-text-title {
+  text-align: start;
+  font-weight: bold;
+
+}
+
+.watch-video-text-description {
+  color: #d1d5db; /* gray-300 equivalent */
+  text-align: start;
+}
+
+.watch-the-video-hollow-text {
+  color: transparent;
+  font-size: 44px;
+  -webkit-text-stroke: 1px white; /* Defines the outer stroke */
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  line-height: 52px;
+}
+
+
+.watch-the-video-bold-text{
+  color: white;
+  font-size: 44px;
+  line-height: 52px;
 }

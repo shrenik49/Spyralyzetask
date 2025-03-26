@@ -1,132 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>1440 Intervention</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/styles/buttonstyle.css">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/styles/buttonstyle.css" />
+    <script>
+      function playVideo() {
+          let video = document.getElementById("myVideo");
+          video.play();
+      }
+  </script>
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="/assets/logo.svg" alt="1440 Intervention Logo">
-            </div>
-            <div class="nav-links">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img src="/assets/logo.svg" alt="1440 Intervention Logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="contact-section">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1>GET AN INTERVENTION</h1>
-                    <p>Detailed description of intervention services goes here.</p>
+      <section class="contact-section">
+        <div class="hero">
+          <div class="hero-content">
+            <h1>GET AN INTERVENTION</h1>
+            <p>Detailed description of intervention services goes here.</p>
+          </div>
+          <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
                 </div>
-                <div class="contact-form-container">
-                    <h2>Contact Us</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="input-wrapper">
-                                <input type="text" id="firstName" placeholder="First Name" required>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="text" id="lastName" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-wrapper">
-                                <input type="email" id="businessEmail" placeholder="Business Email" required>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="text" id="company" placeholder="Company" required>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <select id="country" required>
-                                <option value="">Country</option>
-                                <option value="us">United States</option>
-                                <option value="ca">Canada</option>
-                                <option value="uk">United Kingdom</option>
-                                <!-- Add more countries as needed -->
-                            </select>
-                        </div>
-                        <button  type="submit" class="custombutton">
-                            <img src="/icons/button-arrow-icon.svg" alt="1440 Intervention Logo">
-                            <span>Submit</span>
-                        </button>
-                    </form>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
                 </div>
-            </div>
-            
-        </section>
-        <div class="understanding-section">
-            <section class="image-gallery">
-                <img src="/assets/testimonial1.svg" alt="Gallery Image 1">
-                <img src="/assets/testimonial2.svg" alt="Gallery Image 2">
-                <img src="/assets/testimonial3.svg" alt="Gallery Image 3">
-            </section>
-            <div>
-                we understand
-            </div>
-            <div class="understanding-content">
-                <div class="understanding-item">
-                    <p>Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.</p>
+              </div>
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <input
+                    type="email"
+                    id="businessEmail"
+                    placeholder="Business Email"
+                    required
+                  />
                 </div>
-                <div class="understanding-item">
-                    <p>Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.</p>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="company"
+                    placeholder="Company"
+                    required
+                  />
                 </div>
-                <div class="understanding-item">
-                    <p>Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.</p>
-                </div>
-
-            </div>
+              </div>
+              <div class="input-wrapper">
+                <select id="country" required>
+                  <option value="">Country</option>
+                  <option value="us">United States</option>
+                  <option value="ca">Canada</option>
+                  <option value="uk">United Kingdom</option>
+                  <!-- Add more countries as needed -->
+                </select>
+              </div>
+              <button type="submit" class="custombutton">
+                <img
+                  src="/icons/button-arrow-icon.svg"
+                  alt="1440 Intervention Logo"
+                />
+                <span>Submit</span>
+              </button>
+            </form>
+          </div>
         </div>
-
-
-        <section class="we-understand">
-
-            <div class="testimonial">
-                <img src="/assets/testimonial1.svg" alt="Abbie Harvey">
-                <div class="testimonial-content">
-                    <span class="testimonial-heading">Abbie Harvey</span>
-                    <p class="testimonial-text">I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.</p>
-                </div>
-            </div>
+      </section>
+      <div class="understanding-section">
+        <section class="image-gallery">
+          <img src="/assets/testimonial1.svg" alt="Gallery Image 1" />
+          <img src="/assets/testimonial2.svg" alt="Gallery Image 2" />
+          <img src="/assets/testimonial3.svg" alt="Gallery Image 3" />
         </section>
+        <div>we understand</div>
+        <div class="understanding-content">
+          <div class="understanding-item">
+            <p>
+              Older adults want to play active and meaningful roles in their
+              lives, including as part of a social network, a neighborhood, and
+              a community. Service providers and policymakers must consider that
+              a lack of sense of purpose can become problematic as people age.
+              Engaging them in leisure activities and volunteer work is
+              important.
+            </p>
+          </div>
+          <div class="understanding-item">
+            <p>
+              Older adults want to play active and meaningful roles in their
+              lives, including as part of a social network, a neighborhood, and
+              a community. Service providers and policymakers must consider that
+              a lack of sense of purpose can become problematic as people age.
+              Engaging them in leisure activities and volunteer work is
+              important.
+            </p>
+          </div>
+          <div class="understanding-item">
+            <p>
+              Older adults want to play active and meaningful roles in their
+              lives, including as part of a social network, a neighborhood, and
+              a community. Service providers and policymakers must consider that
+              a lack of sense of purpose can become problematic as people age.
+              Engaging them in leisure activities and volunteer work is
+              important.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <section class="organize-section">
-            <h2>WE CAN ORGANIZE EVERYTHING</h2>
-            <div class="organize-grid">
-                <div class="organize-item">
-                    <h3>Needs Assessment</h3>
-                </div>
-                <div class="organize-item">
-                    <h3>Treatment Planning & Placement</h3>
-                </div>
-                <div class="organize-item">
-                    <h3>Transportation & Logistics</h3>
-                </div>
-            </div>
-        </section>
+      <section class="we-understand">
+        <div class="testimonial">
+          <img src="/assets/testimonial1.svg" alt="Abbie Harvey" />
+          <div class="testimonial-content">
+            <span class="testimonial-heading">Abbie Harvey</span>
+            <p class="testimonial-text">
+              I have been caring for my mom & dad off and on for about 10 years
+              now, and I know the importance of me being there for appointments.
+              Older people need attention, love and care that they truly
+              deserve.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="video-section">
-            <h2>WATCH THE VIDEO</h2>
-            <div class="video-placeholder">
-                Video Placeholder
+      <section class="organize-section">
+        <h2>WE CAN ORGANIZE EVERYTHING</h2>
+        <div class="organize-grid">
+          <div class="organize-item">
+            <h3>Needs Assessment</h3>
+          </div>
+          <div class="organize-item">
+            <h3>Treatment Planning & Placement</h3>
+          </div>
+          <div class="organize-item">
+            <h3>Transportation & Logistics</h3>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="video-section flex items-center justify-between bg-[#23433c] p-10 rounded-lg"
+      >
+        <div class="watch-the-video text-white w-3/5">
+          <h2 class="font-bold">
+            <span class="watch-the-video-hollow-text">WATCH</span>
+            <span class="watch-the-video-bold-text">THE VIDEO</span>
+          </h2>
+          <div class="watch-the-video-outer-container">
+            <div class="mt-6 space-y-4 flex justify-center items-center">
+              <div class="watch-video-text-container">
+                <div class="watch-video-text-icon">✔</div>
+                <div class="watch-video-text-content">
+                  <h3 class="watch-video-text-title ">Needs Assessment</h3>
+                  <p class="watch-video-text-description">
+                    The Advocacy Evaluation Toolkit contains instruments for
+                    evaluating the Consumer Voices for Coverage program.
+                  </p>
+                </div>
+              </div>
+              <div class="watch-video-text-container">
+                <div class="watch-video-text-icon">✔</div>
+                <div class="watch-video-text-content">
+                  <h3 class="watch-video-text-title">Insurance Advocacy</h3>
+                  <p class="watch-video-text-description">
+                    We are committed to advocating for appropriate coverage and
+                    payment policies.
+                  </p>
+                </div>
+              </div>
+              <div class="watch-video-text-container">
+                <div class="watch-video-text-icon">✔</div>
+                <div class="watch-video-text-content">
+                  <h3 class="watch-video-text-title">
+                    Treatment Planning & Placement
+                  </h3>
+                  <p class="watch-video-text-description">
+                    Patients can better understand medical procedures, discharge
+                    instructions, etc.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="relative w-2/5 video-placeholder">
+          <div
+            class="bg-gray-700 w-full  flex items-center justify-center rounded-lg"
+          >
+          <video id="myVideo" width="600" controls>
+            <source src="assets/9707089-uhd_4096_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+       \
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 1440 Intervention. All Rights Reserved.</p>
+      <p>&copy; 2025 1440 Intervention. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
